@@ -1,0 +1,67 @@
+/* style.css */
+
+/* Styling for the offer item */
+.offer-item {
+    background-color: #f8f8f8; /* Background color */
+    padding: 5px; /* Padding */
+    border-radius: 15px; /* Border radius */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow */
+    max-width: 40%; /* Maximum width */
+    margin: 0 auto 20px; /* Margin */
+    font-family: 'Arial', sans-serif; /* Font family */
+}
+
+/* Styling for the offer item on hover */
+.offer-item:hover {
+    background-color: #f2f2f2; /* Background color on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Box shadow on hover */
+}
+
+/* Styling for the offer item title */
+.offer-item-title {
+    font-size: 24px; /* Font size */
+    font-weight: bold; /* Font weight */
+    margin-bottom: 10px; /* Margin bottom */
+}
+
+/* Styling for the offer item data */
+.offer-item-data{
+    display: flex; /* Display as flex */
+    gap: 10px; /* Gap between elements */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin-bottom: 10px; /* Margin bottom */
+}
+
+/* Styling for the offer item data icon */
+.offer-item-data-icon {
+    max-width: 18px; /* Maximum width */
+    padding-right: 5px; /* Padding right */
+}
+
+/* Styling for the offer item data element */
+.offer-item-data-element {
+    border-radius: 15px; /* Border radius */
+    font-size: 18px; /* Font size */
+    font-weight: bold; /* Font weight */
+    padding: 5px 10px; /* Padding */
+    width: fit-content; /* Width based on content */
+    display: flex; /* Display as flex */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+}
+
+.offer-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.offer-item-close {
+    background: none;
+    border: none;
+    color: red;
+    font-size: 16px;
+    cursor: pointer;
+}
+  
