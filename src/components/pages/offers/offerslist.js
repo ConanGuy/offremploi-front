@@ -8,7 +8,7 @@ const OffersList = () => {
 
   function updateOffers() {
     axios
-      .get("http://127.0.0.1:8000/api/offers/?order=-date&lu=false")
+      .get(`${process.env.REACT_APP_API_URL}/offers/?order=-date&lu=false`)
       .then((response) => {
         setOffers(response.data);
       })

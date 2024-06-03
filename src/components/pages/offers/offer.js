@@ -6,11 +6,11 @@ const Offer = ({ data, onMarkAsRead }) => {
   const [offerData] = useState(data);
 
   function handleLinkClick() {
-    axios.patch(`http://127.0.0.1:8000/api/offers/${offerData.id}/read/`);
+    axios.patch(`${process.env.REACT_APP_API_URL}/offers/${offerData.id}/read/`);
   }
 
   function handleMarkAsRead() {
-    axios.patch(`http://127.0.0.1:8000/api/offers/${offerData.id}/read/`).then(() => {
+    axios.patch(`${process.env.REACT_APP_API_URL}/offers/${offerData.id}/read/`).then(() => {
       onMarkAsRead(offerData.id);
     });
   }
