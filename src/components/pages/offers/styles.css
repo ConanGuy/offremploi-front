@@ -3,12 +3,13 @@
 /* Styling for the offer item */
 .offer-item {
     background-color: #f8f8f8; /* Background color */
-    padding: 5px; /* Padding */
+    padding-bottom: 15px; /* Padding */
     border-radius: 15px; /* Border radius */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow */
     max-width: 40%; /* Maximum width */
     margin: 0 auto 20px; /* Margin */
     font-family: 'Arial', sans-serif; /* Font family */
+    position: relative; /* Position relative for inner elements */
 }
 
 /* Styling for the offer item on hover */
@@ -25,7 +26,7 @@
 }
 
 /* Styling for the offer item data */
-.offer-item-data{
+.offer-item-data {
     display: flex; /* Display as flex */
     gap: 10px; /* Gap between elements */
     justify-content: center; /* Center horizontally */
@@ -52,16 +53,35 @@
 }
 
 .offer-item-header {
-    display: flex;
+    display: inline-flexbox;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start; /* Align items to start to avoid shifting */
+    padding-top: 0px;
+    position: relative;
+
+    background-color: #e0e0e0; /* Background color for the rectangle */
+    border-top-left-radius: 15px; /* Border radius for top left corner */
+    border-top-right-radius: 15px; /* Border radius for top left corner */
+}
+
+/* New styling for the top-left region */
+.offer-item-group {
+    padding: 5px 10px; /* Adjust padding */
+    /* border-bottom-right-radius: 15px; Border radius for bottom right corner to blend in */
+    font-size: 14px; /* Adjust font size if needed */
+    vertical-align: top;
+    position: relative;
+    top: 0;
+    left: 0;
 }
 
 .offer-item-close {
     background: none;
     border: none;
     color: red;
-    font-size: 16px;
+    font-size: 18px;
     cursor: pointer;
+    position:absolute;
+    top: 0;
+    right: 5px;
 }
-  
