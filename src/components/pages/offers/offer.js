@@ -18,18 +18,21 @@ const Offer = ({ data, onMarkAsRead }) => {
   return (
     <div className="offer-item">
       <div className="offer-item-header">
-        <div className="offer-item-title">
-          <a
-            href={offerData.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={handleLinkClick}
-          >
-            {offerData.title}
-          </a>
-        </div>
+        <p className="offer-item-group">{offerData.offer_group.name}</p>
         <button className="offer-item-close" onClick={handleMarkAsRead}>✖</button>
       </div>
+      
+      <div className="offer-item-title">
+        <a
+          href={offerData.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={handleLinkClick}
+        >
+          {offerData.title}
+        </a>
+      </div>
+
       <div className="offer-item-data">
         <div className="offer-item-data-element offer-item-data-title">
           <img
