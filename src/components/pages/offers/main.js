@@ -5,9 +5,9 @@ class Main extends React.Component {
   render() {
     return (
       <>
-        <div>
+        <div style={{fontFamily: 'Arial'}}>
           <h1>Offers</h1>
-          <p>Check out our latest offers</p>
+          <p>Check out the latest offers</p>
         </div>
         <OffersList />
       </>
